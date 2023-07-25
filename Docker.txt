@@ -129,6 +129,37 @@
 		-> Docker Hub [publishing an image into docker hub]
 
 
+		-> Docker,docker image,docker container,docker-compose up -d
+		-> Dockerizing UpMyApp
+		-> running mysql-server within docker and accessing through bash
+		-> commands list:
+				docker images
+				docker ps -a
+				docker stop 271079f53876 [container-id]
+				docker rm 271079f53876[container-id]
+				docker ps -a
+				docker rmi f6360852d654 [image-id]
+				docker images
+				docker system prune -a[removes all unused containers,networks,images etc...]
+				
+			
+				
+				
+		-> Docker Hub:
+				-> Sign Up in docker hub account
+				-> docker login
+
+				   docker push:			
+
+				->  docker tag upmyapp-app saddu/upmyapp-app:latest
+				    docker push saddu/upmyapp-app:latest
+
+				   docker pull:	
+
+				   docker pull saddu/upmyapp-app:latest
+				
+
+
 	
 	
 
