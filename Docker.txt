@@ -1,0 +1,174 @@
+	Docker:
+
+	Applications:
+
+	Web Application ===> applications accessible over the browsers
+
+	Stand Alone Apps
+	Mobile 
+
+	SDLC: Software Development Life Cycle
+
+	Requirements Gathering 
+	Analysis and Feasibilty Study
+	Design
+	Coding  <- Developer 
+	Testing 
+	Implementation
+	Maintainence
+
+	API: Application Programming Interface
+	SDTE: 
+	JAVA FSD
+	PYTHON FSD
+	...   FSD	
+
+						MIGRATION / RELEASE /IMPLEMENTATION
+			STAGING                   ------------------->               PRODUCTION SERVER OR LIVE SERVER OR CLIENT SERVER ...
+	Devlopment Server           Testing Server
+                      BA/SDM ...
+		      PA
+ 		      PM
+	  DM/SSE                        TM/ SSE
+	Devlopment                     Testing
+	D1 D2 D3 D4 D5                T1 T2 T3 T4 T5
+
+=====================================================================================================================================================
+
+	
+
+		DEVELOPMENT       OPERATIONS
+
+
+====================================================================================================================
+
+	Windows ----->  Virtual BOX ---> UBUNTU OS
+                        (ubuntu.iso)
+
+	UBUNTU ----->  Virtual BOX ---> WINDOWS OS
+                        (windows.iso)
+
+		RAM : 16GB
+		Disc Space: 80GB
+-------------------------------------------------------------------------------------------------------------------
+
+	Docker 
+	WIndows
+
+---> docker --version
+---> Hello WOrld execution:
+			docker run hello-world
+			docker images
+			docker ps -a 
+			------------------------
+			docker-compose up -d
+			-------------------------
+		
+-------------------------------------------------------------------------------------------------------------------
+
+	Task or Exercise : Running a Web App locally [we will be acessing APIs through postman]
+
+	Dependencies:
+			JRE11 or JDK11
+			STS 4.4[SpringBoot] application.properties
+			MySQL Server 8.0+
+			Postman
+
+	java --version
+	javac --version
+===================================================================================================================
+
+	
+	Docker:
+	-----
+		-> Build and run image as a container
+		-> Share images using Docker Hub
+		-> Deploy Docker applications using multiple containers with a database
+		-> Run applications using Docker Compose.
+
+	
+	Container:
+	---------
+			Its a sandboxed process on your machine that is isloated from all other processess on the host machine.
+
+		-> Its a runnable instance of an image.You can create,start,stop or delete a container using cli.
+		-> Can be run on local machines,virtual machines or deployed to the cloud.
+		-> Is portable (can run on any OS)
+		-> Is isolated from other containers and runs in own software , binaries and configurations.
+
+
+	Image:
+	------
+		when a running a container,it uses an isolated filesystem.
+		The custom file system is provided by container image.
+		Since the image contains the containers filesystem.
+		It must contain all dependencies,configurations,scripts,binaries etc..
+
+		
+		Containerize an application:
+		----------------------------		
+
+		
+		-> DockerFile and docker-compose.yml	
+		=====================================
+			FROM : creates a layer from the image specified(maven:3.8.2-jdk-8).
+				
+		-> Running mysql-server with docker[any app running through docker]			
+				docker pull mysql/mysql-server:latest
+
+		docker run -d -p 3307:3306 --name mysql-docker-container -e MYSQL_USER=root -e MYSQL_ROOT_PASSWORD=admin mysql/mysql-server:latest
+
+		docker exec -it mysql-docker-container bash
+
+		 mysql -u root -p
+		
+			
+			Platform: Java or Node or Python or .Net or PHP or GoLang etc...
+			Deployments: Maven or Gradle 
+			
+		-> Docker Hub [publishing an image into docker hub]
+
+
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+			
+
+	
+
+
+
+	
